@@ -7,4 +7,4 @@ You can clear the game by stepping on all the ground except for the mines on the
 2. Progress of the game
 There is a board, and the game is played by stepping on it, marking a mine or "?".
 
-* I'm going to update some more detailed descriptions during September 9, 2019.
+* I'm going to update some more detailed descriptions during Monday 9 September 2019.
