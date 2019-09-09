@@ -17,10 +17,13 @@ __________________________________________
 
 English, 日本語, and 한국어 order (depending on the number of speakers)
 
-■English, 日本語
+■English
 
 https://ka373.blogspot.com/2019/09/blog-post_9.html
 
+■日本語
+
+https://ka373.blogspot.com/2019/09/cui0.html
 
 ■한국어
 
