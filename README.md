@@ -1,8 +1,7 @@
 # CUIMinesweeperWithSpreadingZeros
 This program is a simple CUI minesweeper in C. (with spreading zeros)
 
-The exe file(DifferentRandomNumbers.exe) is created by compiling the code on Windows 10.(Expect to work on Windows 10)
-
+The exe file(MinesweeperCUI.exe) is produced by compiling the code in the Windows 7 environment. (Expect to work on Windows 7)
 
 I. Purpose of the game
 
