@@ -15,6 +15,7 @@ There is a board, and the game is played by stepping on it, marking a mine or "?
 __________________________________________
 【More details and a bit of production process】
 
+English, 日本語, and 한국어 order (depending on the number of speakers)
 
 ■English, 日本語
 
