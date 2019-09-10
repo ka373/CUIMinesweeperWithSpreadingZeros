@@ -28,7 +28,7 @@
 int i = 0, j = 0;//for index
 int num_of_stepped = 0; //Count the number of steps and use it to end the game
 
-int board_visible[NUM_OF_ROWS][NUM_OF_COLUMNS];	// Similar to the board seen by the user
+int board_visible[NUM_OF_ROWS][NUM_OF_COLUMNS];	//Similar to the board seen by the user
 int board_kotae[NUM_OF_ROWS][NUM_OF_COLUMNS];	//Board with numbers and mines (correct answer board)
 
 void print_board(int board_visible[NUM_OF_ROWS][NUM_OF_COLUMNS]);
@@ -56,7 +56,7 @@ int main() {
 	int num_of_mine = NUM_MINE;
 	int temp_mine_count = 0;
 
-	int mines_marked = 0;//The number of mines I marked on the screen
+	int mines_marked = 0; //The number of mines I marked on the screen
 
 	srand((unsigned int)time(NULL));
 	///////////////////////////////////
@@ -93,18 +93,17 @@ int main() {
 				
 				//upper
 				if (i - 1 >= 0) {
-					if (j - 1 >= 0) { if (board_kotae[i - 1][j - 1] == MINE) { temp_mine_count++; } }	//Determine whether the upper left is mine
-					if (board_kotae[i - 1][j] == MINE) { temp_mine_count++; }							//upper
-					if (j + 1 >= 0) { if (board_kotae[i - 1][j + 1] == MINE) { temp_mine_count++; } }	//upper right
+					if (j - 1 >= 0) { if (board_kotae[i - 1][j - 1] == MINE) { temp_mine_count++; } }			//Determine whether the upper left is mine
+					if (board_kotae[i - 1][j] == MINE) { temp_mine_count++; }						//upper
+					if (j + 1 >= 0) { if (board_kotae[i - 1][j + 1] == MINE) { temp_mine_count++; } }			//upper right
 				}
-
 				//same line
-				if (j - 1 >= 0) { if (board_kotae[i][j - 1] == MINE) { temp_mine_count++; } }				//left
-				if (j + 1 < NUM_OF_COLUMNS) { if (board_kotae[i][j + 1] == MINE) { temp_mine_count++; } }	//right
+				if (j - 1 >= 0) { if (board_kotae[i][j - 1] == MINE) { temp_mine_count++; } }					//left
+				if (j + 1 < NUM_OF_COLUMNS) { if (board_kotae[i][j + 1] == MINE) { temp_mine_count++; } }			//right
 
 				//lower
 				if (i + 1 < NUM_OF_ROWS) {
-					if (j - 1 >= 0) { if (board_kotae[i + 1][j - 1] == MINE) { temp_mine_count++; } }					//lower left
+					if (j - 1 >= 0) { if (board_kotae[i + 1][j - 1] == MINE) { temp_mine_count++; } }			//lower left
 					if (board_kotae[i + 1][j] == MINE) { temp_mine_count++; }											//lower
 					if (j + 1 < NUM_OF_COLUMNS) { if (board_kotae[i + 1][j + 1] == MINE) { temp_mine_count++; } }		//lower right
 				}
@@ -124,7 +123,7 @@ int main() {
 	print_board(board_visible);	//Print Board First
 	start_time = clock(); //Start time measurement
 
-						  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	do {
 		printf("Total Mines: %d, Mines marked: %d\n\n", NUM_MINE, mines_marked);
 		printf("Please enter the location(row, column) and type\n");
@@ -168,7 +167,7 @@ int main() {
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	return 0;
-}// end of main
+}//end of main
 
  ////////////////////////////////////////////////////////
 int process_game(int row_entered, int column_entered, int check_type) {
@@ -252,16 +251,16 @@ void print_board(int board_visible[NUM_OF_ROWS][NUM_OF_COLUMNS]) {
 			switch (board_visible[i][j]) {
 
 			case UNMARKED:			printf("□ ");		break;
-			case MINE:				printf(" * ");		break;
+			case MINE:			printf(" * ");		break;
 			case MINE_CHECK:		printf(" F ");		break;	//Flag
 			case DONT_KNOW:			printf(" ? ");		break;
-			case 0:					printf("   ");		break;
+			case 0:				printf("   ");		break;
 
 			case 1:	case 2:	case 3:	case 4:	case 5:	case 6:	case 7:	case 8:
 				printf(" %d ", board_visible[i][j]);
 				break;
 
-			default:				printf(" D ");		break;
+			default:			printf(" D ");		break;
 			}
 		}
 		printf("\n");
@@ -282,8 +281,8 @@ int process_NUM_MINE_randoms()
 	int i = 0, j = 0; //for index
 	int temp_random = 0;
 
-	const int num_of_want_nums = NUM_MINE;						//for different number, NUM_OF_WANT_NUMS <= TO_NUM
-	const int to_num = NUM_OF_ROWS * NUM_OF_COLUMNS;			//if you want to optaion integer of 0-9,set 10
+	const int num_of_want_nums = NUM_MINE;			//for different number, NUM_OF_WANT_NUMS <= TO_NUM
+	const int to_num = NUM_OF_ROWS * NUM_OF_COLUMNS;	//if you want to optaion integer of 0-9,set 10
 
 	int is_duplicated = 0;
 
