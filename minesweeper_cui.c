@@ -10,8 +10,8 @@
 //*****************************************************************************************
 
 #include<stdio.h>
-#include<stdlib.h>//for random
-#include<time.h>//for random
+#include<stdlib.h>
+#include<time.h>
 
 #define MINE -1
 
@@ -25,7 +25,7 @@
 #define NUM_OF_ROWS 8
 #define NUM_OF_COLUMNS 8
 
-int i = 0, j = 0;//for index
+int i = 0, j = 0; //for index
 int num_of_stepped = 0; //Count the number of steps and use it to end the game
 
 int board_visible[NUM_OF_ROWS][NUM_OF_COLUMNS];	//Similar to the board seen by the user
@@ -97,6 +97,7 @@ int main() {
 					if (board_kotae[i - 1][j] == MINE) { temp_mine_count++; }						//upper
 					if (j + 1 >= 0) { if (board_kotae[i - 1][j + 1] == MINE) { temp_mine_count++; } }			//upper right
 				}
+				
 				//same line
 				if (j - 1 >= 0) { if (board_kotae[i][j - 1] == MINE) { temp_mine_count++; } }					//left
 				if (j + 1 < NUM_OF_COLUMNS) { if (board_kotae[i][j + 1] == MINE) { temp_mine_count++; } }			//right
@@ -134,9 +135,9 @@ int main() {
 		scanf_s(" %c", &input_type_char, sizeof(input_type_char));
 
 		switch (input_type_char) {
-		case 's': case 'S':		temp_type = STEPPED;							break;
+		case 's': case 'S':		temp_type = STEPPED;					break;
 		case 'f': case 'F':		temp_type = MINE_CHECK;		mines_marked++;		break;
-		case '?':  default:		temp_type = DONT_KNOW;							break;
+		case '?':  default:		temp_type = DONT_KNOW;					break;
 		}
 		is_continue = process_game(checking_row, checking_column, temp_type);
 		print_board(board_visible);
