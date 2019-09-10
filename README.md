@@ -1,20 +1,20 @@
 # CUIMinesweeperWithSpreadingZeros
-This program is a simple CUI minesweeper in C.
+■ This program is a simple CUI minesweeper in C.
 
-I implemented a spreading zeros feature that many people who implement minesweeper games don't make.
+■ I implemented a spreading zeros feature that many people who implement minesweeper games don't make.
 
 * spreading zeros: When there are no mines in the eight blocks around a stepped block, the 8 blocks are also gradually treated as stepped on.
 
-The exe file (MinesweeperCUI.exe) is produced by compiling the code in the Windows 7 environment. (Expect to work on Windows 7)
+■ The exe file (MinesweeperCUI.exe) is produced by compiling the code in the Windows 7 environment. (Expect to work on Windows 7)
 
-
-I. Purpose of the game
+■ Purpose of the game
 
 You can clear the game by stepping on all the ground except for the mines on the board.
 
-II. Progress of the game
+■ Progress of the game
 
 There is a board, and the game is played by stepping on it, marking a mine or "?".
+
 
 __________________________________________
 【More details and a bit of production process】
