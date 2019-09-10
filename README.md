@@ -1,7 +1,7 @@
 # CUIMinesweeperWithSpreadingZeros
 ■ This program is a simple CUI minesweeper in C.
 
-■ I implemented a Spreading Zeros feature that many people who implement minesweeper games don't make.
+■ I implemented the Spreading Zeros feature that many people who implement minesweeper games don't make.
 
 * Spreading Zeros: When there are no mines in the eight blocks around a stepped block, the 8 blocks are also gradually treated as stepped on.
 
