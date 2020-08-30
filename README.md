@@ -1,5 +1,7 @@
-# CUIMinesweeperWithSpreadingZeros
-■ This program is a simple CUI minesweeper in C.
+# SimpleCUIMinesweeperWithSpreadingZeros
+■ This program is a simple CUI minesweeper in C. 
+
+* Many people want to implement a Minesweeper game before learning data structures or algorithms in detail. This program is made to be recognizable and implementable to them as well.
 
 ■ I implemented the Spreading Zeros feature that many people who implement minesweeper games don't make.
 
